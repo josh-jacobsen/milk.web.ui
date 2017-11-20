@@ -1,3 +1,7 @@
-import { app } from "./app.js"
+import { app } from './app.js'
 
-app.$mount("#app");
+app.$mount('#app')
+
+if (module.hot) {
+  module.hot.accept()
+}
