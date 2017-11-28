@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "database": "json-server --watch db.json --port 3004",
     "setup-env": "node config/setup-env-vars.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node node_modules/eslint/bin/eslint.js .",
@@ -39,6 +40,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
+    "json-server": "^0.12.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.5.0",
