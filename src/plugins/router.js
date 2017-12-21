@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// this is a comment to see if I can push from work laptop
+
 // Normal import statements are dispensed with to all for lazy loading
 // import Category from '../theme/Category.vue'
 // import Login from '../theme/Login.vue'
