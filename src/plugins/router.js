@@ -8,6 +8,9 @@ const Category = () => import('../theme/Category.vue')
 const Login = () => import('../theme/Login.vue')
 const NotFound = () => import('../theme/NotFound.vue')
 
+// TODO: add eslint for vue.js files
+// TODO: add toastr for notifications
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({

@@ -9,37 +9,21 @@
         </div>
 </template>
 <script>
+
 import Post from './Post.vue'
-import appService from '../service/service.js'
+import firebaseDB from '../service/firebaseDB.js'
+
 export default {
   components: {
     'app-post': Post
   },
   data () {
     return {
-      id: this.$route.params.id,
       posts: []
     }
   },
-  methods: {
-    loadPosts () {
-      let category = 'front-end'
-      if (this.id === 'mobile') {
-        category = 'mobile'
-      }
-      appService.getPosts(category).then(data => {
-        this.posts = data
-      })
-    }
-  },
-  watch: {
-    '$route' (to, from) {
-      this.id = to.params.id
-      this.loadPosts()
-    }
-  },
-  created () {
-    this.loadPosts()
+  firebase: {
+    posts: firebaseDB
   }
 }
 </script>

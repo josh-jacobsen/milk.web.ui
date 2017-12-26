@@ -7,8 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "database": "json-server --watch db.json --port 3004",
     "setup-env": "node config/setup-env-vars.js",
+    "database": "json-server --watch db.json --port 3004",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node node_modules/eslint/bin/eslint.js .",
     "lint-fix": "node node_modules/eslint/bin/eslint.js . --fix",
@@ -20,8 +20,11 @@
     "axios": "^0.17.1",
     "bulma": "^0.6.1",
     "dotenv": "^4.0.0",
+    "dotenv-webpack": "^1.5.4",
+    "firebase": "^4.8.1",
     "vue": "^2.5.5",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuefire": "^1.4.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

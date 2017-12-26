@@ -1,0 +1,10 @@
+# Running 'npm run setup-env' will generate a .env file based on the values in the .sample-env file
+# The .env file will be read by the Dotenv webpack plugin (specified in the webpack.base.config file) to make
+# the variables available to the application
+
+API_KEY=39 character alphanumeric string
+AUTH_DOMAIN=applicationAuthDomain
+DATABASE_URL=applicationDatabaseURL
+PROJECT_ID=applicationProjectId
+STORAGE_BUCKET=applicationStorageBucket
+MESSAGING_SENDER_ID=12 character int
