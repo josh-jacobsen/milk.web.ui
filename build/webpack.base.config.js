@@ -1,9 +1,14 @@
 const path = require('path')
+const Dotenv = require('dotenv-webpack');
 
 const config = {
   entry: {
-    app: path.resolve(__dirname, '../src/client-entry.js')
+    app: path.resolve(__dirname, '../src/index.js')
   },
+  // Add the Dotenv plugin to read .env file and make available
+  plugins: [
+    new Dotenv()
+  ],
   module: {
     rules: [
       {
